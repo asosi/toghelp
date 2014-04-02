@@ -1,0 +1,57 @@
+
+
+Columa, Hospital located in Nachigwea which is in Cabo Delgado, a province of Mozambique, a country on the continent of Africa.
+:: Update :: Upgrade
+General Information
+Columa: Hospital in Nachigwea
+Latitude/Longitude: S 12° 59' 42.00"  E 39° 19' 21.00" (-12.99500, 39.32250)
+Time Zone: Africa/Maputo UTC/GMT+02:00
+
+
+
+
+
+
+Gotite, Hospital located in Gotite which is in Inhambane, a province of Mozambique, a country on the continent of Africa.
+:: Update :: Upgrade
+General Information
+Gotite: Hospital in Gotite
+Latitude/Longitude: S 23° 26' 21.98"  E 35° 13' 54.01" (-23.43944, 35.23167)
+Time Zone: Africa/Maputo UTC/GMT+02:00
+
+
+
+
+
+
+
+Granja Regional do Niassa, Hospital located near Namaita which is in Nampula, a province of Mozambique, a country on the continent of Africa.
+:: Update :: Upgrade
+General Information
+Granja Regional do Niassa: Hospital near Namaita
+Latitude/Longitude: S 15° 16' 12.00"  E 39° 1' 44.00" (-15.27000, 39.02889)
+Time Zone: Africa/Maputo UTC/GMT+02:00
+
+
+
+
+
+Insania, Hospital located in Nicocoro which is in Cabo Delgado, a province of Mozambique, a country on the continent of Africa.
+:: Update :: Upgrade
+General Information
+Insania: Hospital in Nicocoro
+Latitude/Longitude: S 12° 56' 20.00"  E 39° 26' 44.99" (-12.93889, 39.44583)
+Time Zone: Africa/Maputo UTC/GMT+02:00
+
+
+
+
+
+
+
+Zambezia, Hospital located in Dhalman which is in Cabo Delgado, a province of Mozambique, a country on the continent of Africa.
+:: Update :: Upgrade
+General Information
+Zambezia: Hospital in Dhalman
+Latitude/Longitude: S 12° 52' 4.01"  E 39° 41' 12.98" (-12.86778, 39.68694)
+Time Zone: Africa/Maputo UTC/GMT+02:00
