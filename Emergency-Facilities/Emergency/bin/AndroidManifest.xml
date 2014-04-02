@@ -33,7 +33,7 @@
         <activity
             android:name="com.example.emergency.GiveHelp"
             android:label="@string/title_activity_give_help"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
@@ -51,6 +51,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.Result" />
+        </activity>
+        <activity
+            android:name="com.example.emergency.TabListener"
+            android:label="@string/title_activity_tab_listener" >
+        </activity>
+        <activity
+            android:name="com.example.emergency.TabFragment"
+            android:label="@string/title_activity_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.emergency.GiveHelpCreate"
+            android:label="@string/title_activity_give_help_create" >
+        </activity>
+        <activity
+            android:name="com.example.emergency.GiveHelpList"
+            android:label="@string/title_activity_give_help_list" >
         </activity>
     </application>
 

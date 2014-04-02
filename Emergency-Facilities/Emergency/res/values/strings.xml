@@ -9,5 +9,9 @@
     <string name="title_activity_give_help">Give Help</string>
     <string name="title_activity_result">Results</string>
     <string name="title_activity_help_details">Details</string>
+    <string name="title_activity_tab_listener">TabListener</string>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="title_activity_give_help_create">GiveHelpCreate</string>
+    <string name="title_activity_give_help_list">GiveHelpList</string>
 
 </resources>
