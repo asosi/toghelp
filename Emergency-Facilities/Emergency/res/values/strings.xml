@@ -13,5 +13,7 @@
     <string name="title_activity_fragment">Fragment</string>
     <string name="title_activity_give_help_create">GiveHelpCreate</string>
     <string name="title_activity_give_help_list">GiveHelpList</string>
+    <string name="title_activity_afragment">AFragment</string>
+    <string name="title_activity_bfragment">BFragment</string>
 
 </resources>

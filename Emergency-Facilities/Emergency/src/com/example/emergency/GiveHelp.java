@@ -29,28 +29,71 @@ public class GiveHelp extends ActionBarActivity{
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-	    actionBar.setDisplayShowTitleEnabled(false);
+	    
+	    ActionBar.Tab tabA = actionBar.newTab().setText("Resources");
+	    ActionBar.Tab tabB = actionBar.newTab().setText("List of helps");
+	    
+	    Fragment fragmentA = new AFragment();
+	    Fragment fragmentB = new BFragment();
+	    
+	    tabA.setTabListener(new MyTabsListener(fragmentA));
+	    tabB.setTabListener(new MyTabsListener(fragmentB));
+	    
+	    actionBar.addTab(tabA);
+	    actionBar.addTab(tabB);
+	    
+	}
+	
+	protected class MyTabsListener implements ActionBar.TabListener {
+		
+		private Fragment fragment;
+		
+		public MyTabsListener (Fragment fragment) {
+			this.fragment = fragment;
+		}
 
-	    Tab tab = actionBar.newTab()
-	                       .setText("Tab 1")
-	                       .setTabListener(new TabListener<GiveHelp>(
-	                               this, "artist", GiveHelp.class));
-	    actionBar.addTab(tab);
-
-	    tab = actionBar.newTab()
-	                   .setText("Tab 2")
-	                   .setTabListener(new TabListener<GiveHelp>(
-	                           this, "album", GiveHelp.class));
-	    actionBar.addTab(tab);
-  
+	public void onTabReselected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+	
 	}
 
+	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		ft.add(R.id.fragment_place, fragment, null);
+	}
+
+	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		ft.remove(fragment);
+	}
+
+	@Override
+	public void onTabReselected(android.support.v7.app.ActionBar.Tab arg0,
+			android.support.v4.app.FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTabSelected(android.support.v7.app.ActionBar.Tab arg0,
+			android.support.v4.app.FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTabUnselected(android.support.v7.app.ActionBar.Tab arg0,
+			android.support.v4.app.FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.give_help, menu);
 		return true;
 	}
-
 
 }
