@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 
+// Fragment that creates the "help"
 public class AFragment extends Fragment {
 
 	@Override

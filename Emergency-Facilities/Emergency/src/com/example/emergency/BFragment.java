@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 public class BFragment extends Fragment {
 
+	// fragment that shows given helps
 	@Override
 	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		
