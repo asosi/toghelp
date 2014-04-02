@@ -29,15 +29,17 @@
             android:paddingLeft="10dp" />
     </LinearLayout>
     
-    
     <ListView
-	    android:id="@+id/resultlist"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@id/linearLayout1"
-	    android:layout_marginTop="10dp"
-	    android:divider="@android:color/transparent"
-  		android:dividerHeight="5.0sp">
+        android:id="@+id/resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp" >
+
 	</ListView>
 
 </RelativeLayout>

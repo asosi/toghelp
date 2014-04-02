@@ -34,7 +34,7 @@
             android:name="com.example.emergency.GiveHelp"
             android:label="@string/title_activity_give_help"
             android:theme="@style/Theme.AppCompat.Light" >
- >
+ >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
@@ -42,6 +42,10 @@
         <activity
             android:name="com.example.emergency.Result"
             android:label="@string/title_activity_result" >
+        </activity>
+        <activity
+            android:name="com.example.emergency.HelpDetails"
+            android:label="@string/title_activity_help_details" >
         </activity>
     </application>
 

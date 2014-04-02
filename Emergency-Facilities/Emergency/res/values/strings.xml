@@ -8,5 +8,6 @@
     <string name="title_activity_ask_help">AskHelp</string>
     <string name="title_activity_give_help">GiveHelp</string>
     <string name="title_activity_result">Result</string>
+    <string name="title_activity_help_details">HelpDetails</string>
 
 </resources>
