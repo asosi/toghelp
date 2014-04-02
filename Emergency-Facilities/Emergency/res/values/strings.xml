@@ -7,5 +7,6 @@
     <string name="title_activity_start_screen">StartScreen</string>
     <string name="title_activity_ask_help">AskHelp</string>
     <string name="title_activity_give_help">GiveHelp</string>
+    <string name="title_activity_result">Result</string>
 
 </resources>
