@@ -12,10 +12,13 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+         >
         <activity
             android:name="com.example.emergency.StartScreen"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +36,8 @@
         <activity
             android:name="com.example.emergency.GiveHelp"
             android:label="@string/title_activity_give_help"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat.Light"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
@@ -52,30 +56,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.Result" />
         </activity>
-        <activity
-            android:name="com.example.emergency.TabListener"
-            android:label="@string/title_activity_tab_listener" >
-        </activity>
-        <activity
-            android:name="com.example.emergency.TabFragment"
-            android:label="@string/title_activity_fragment" >
-        </activity>
-        <activity
-            android:name="com.example.emergency.GiveHelpCreate"
-            android:label="@string/title_activity_give_help_create" >
-        </activity>
-        <activity
-            android:name="com.example.emergency.GiveHelpList"
-            android:label="@string/title_activity_give_help_list" >
-        </activity>
-        <activity
-            android:name="com.example.emergency.AFragment"
+        <fragment
+            android:name="com.example.emergency.AFragment1"
             android:label="@string/title_activity_afragment" >
-        </activity>
-        <activity
+        </fragment>
+        <fragment
             android:name="com.example.emergency.BFragment"
             android:label="@string/title_activity_bfragment" >
-        </activity>
+        </fragment>
     </application>
 
 </manifest>
