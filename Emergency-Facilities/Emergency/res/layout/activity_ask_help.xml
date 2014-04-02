@@ -9,11 +9,39 @@
     tools:context=".AskHelp" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true">
+        android:layout_alignParentRight="true"
+        android:background="@color/verdescuro"
+        android:padding="3dp" >
 
-	</LinearLayout>
+        <TextView
+            android:id="@+id/whatneeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What do you need?"
+            android:textColor="@color/bianco"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:text="TextView" />
 
 </RelativeLayout>
