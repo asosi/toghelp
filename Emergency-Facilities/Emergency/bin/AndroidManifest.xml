@@ -26,6 +26,14 @@
             android:name="com.example.emergency.StartScreen"
             android:label="@string/title_activity_start_screen" >
         </activity>
+        <activity
+            android:name="com.example.emergency.AskHelp"
+            android:label="@string/title_activity_ask_help" >
+        </activity>
+        <activity
+            android:name="com.example.emergency.GiveHelp"
+            android:label="@string/title_activity_give_help" >
+        </activity>
     </application>
 
 </manifest>
