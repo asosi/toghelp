@@ -4,10 +4,10 @@
     <string name="app_name">Emergency</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_start_screen">StartScreen</string>
-    <string name="title_activity_ask_help">AskHelp</string>
-    <string name="title_activity_give_help">GiveHelp</string>
-    <string name="title_activity_result">Result</string>
-    <string name="title_activity_help_details">HelpDetails</string>
+    <string name="title_activity_start_screen">Home</string>
+    <string name="title_activity_ask_help">Ask Help</string>
+    <string name="title_activity_give_help">Give Help</string>
+    <string name="title_activity_result">Results</string>
+    <string name="title_activity_help_details">Details</string>
 
 </resources>

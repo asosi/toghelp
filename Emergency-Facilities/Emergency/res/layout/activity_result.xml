@@ -37,6 +37,7 @@
         android:layout_alignRight="@+id/linearLayout1"
         android:layout_below="@id/linearLayout1"
         android:layout_marginTop="10dp"
+        android:padding="5dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp" >
 

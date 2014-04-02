@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:text="Food"
         android:textSize="20sp"
         android:padding="5dp" />

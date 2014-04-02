@@ -8,9 +8,90 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".HelpDetails" >
 
-    <TextView
-        android:layout_width="wrap_content"
+ <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/verdescuro"
+        android:padding="3dp"
+         >
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textColor="@color/bianco"
+            android:textSize="20sp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+ <TextView
+     android:id="@+id/telephone"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/namehelper"
+     android:layout_below="@+id/namehelper"
+     android:padding="5dp"
+     android:text="3483997893"
+     android:clickable="true"
+     android:autoLink = "phone"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ <TextView
+     android:id="@+id/adress"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/telephone"
+     android:layout_below="@+id/telephone"
+     android:padding="5dp"
+     android:text="No adress or location"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+ <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/verdescuro"
+        android:layout_below="@id/adress"
+        android:layout_marginTop="25dp"
+        android:padding="3dp"
+         >
+
+        <TextView
+            android:id="@+id/offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offers"
+            android:textColor="@color/bianco"
+            android:textSize="20sp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+ <TextView
+     android:id="@+id/namehelper"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/linearLayout1"
+     android:layout_below="@+id/linearLayout1"
+     android:layout_marginTop="10dp"
+     android:padding="5dp"
+     android:text="Name of the helper"
+     android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ <TextView
+     android:id="@+id/offerte"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/linearLayout2"
+     android:layout_below="@+id/linearLayout2"
+     android:layout_marginTop="15dp"
+     android:padding="5dp"
+     android:text="No offerte"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
