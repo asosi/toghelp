@@ -26,22 +26,53 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
+    <CheckBox
+        android:id="@+id/food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="17dp"
-        android:text="TextView" />
+        android:layout_marginTop="14dp"
+        android:text="Food" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <CheckBox
+        android:id="@+id/firstaid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignRight="@+id/linearLayout1"
-        android:text="TextView" />
+        android:layout_alignLeft="@+id/pchildren"
+        android:layout_below="@+id/pchildren"
+        android:text="First aid" />
+
+    <CheckBox
+        android:id="@+id/pchildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bed"
+        android:layout_below="@+id/bed"
+        android:text="Products for children" />
+
+    <CheckBox
+        android:id="@+id/medicines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstaid"
+        android:layout_below="@+id/firstaid"
+        android:text="Medicines" />
+
+    <CheckBox
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/food"
+        android:layout_below="@+id/food"
+        android:text="Water" />
+
+    <CheckBox
+        android:id="@+id/bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/water"
+        android:layout_below="@+id/water"
+        android:text="Bed" />
 
 </RelativeLayout>

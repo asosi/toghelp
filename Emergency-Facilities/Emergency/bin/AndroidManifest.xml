@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.emergency.Situation"
+            android:name="com.example.emergency.StartScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,17 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.emergency.StartScreen"
-            android:label="@string/title_activity_start_screen" >
-        </activity>
+        
         <activity
             android:name="com.example.emergency.AskHelp"
-            android:label="@string/title_activity_ask_help" >
+            android:label="@string/title_activity_ask_help"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.emergency.StartScreen" />
         </activity>
         <activity
             android:name="com.example.emergency.GiveHelp"
-            android:label="@string/title_activity_give_help" >
+            android:label="@string/title_activity_give_help"
+            android:theme="@style/Theme.AppCompat.Light" > >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.emergency.StartScreen"  />
         </activity>
     </application>
 
