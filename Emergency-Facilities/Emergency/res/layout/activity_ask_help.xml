@@ -15,7 +15,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@color/verdescuro"
-        android:padding="3dp" >
+        android:padding="3dp"
+         >
 
         <TextView
             android:id="@+id/whatneeds"
@@ -23,7 +24,8 @@
             android:layout_height="wrap_content"
             android:text="What do you need?"
             android:textColor="@color/bianco"
-            android:textSize="18sp" />
+            android:textSize="20sp"
+            android:paddingLeft="10dp" />
     </LinearLayout>
 
     <CheckBox
@@ -33,7 +35,9 @@
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
         android:layout_marginTop="14dp"
-        android:text="Food" />
+        android:text="Food"
+        android:textSize="20sp"
+        android:padding="5dp" />
 
     <CheckBox
         android:id="@+id/firstaid"
@@ -41,7 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/pchildren"
         android:layout_below="@+id/pchildren"
-        android:text="First aid" />
+        android:text="First aid"
+        android:textSize="20sp"
+        android:padding="5dp"  />
 
     <CheckBox
         android:id="@+id/pchildren"
@@ -49,7 +55,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/bed"
         android:layout_below="@+id/bed"
-        android:text="Products for children" />
+        android:text="Products for children"
+        android:textSize="20sp"
+        android:padding="5dp"  />
 
     <CheckBox
         android:id="@+id/medicines"
@@ -57,7 +65,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/firstaid"
         android:layout_below="@+id/firstaid"
-        android:text="Medicines" />
+        android:text="Medicines"
+        android:textSize="20sp"
+        android:padding="5dp"  />
 
     <CheckBox
         android:id="@+id/water"
@@ -65,7 +75,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/food"
         android:layout_below="@+id/food"
-        android:text="Water" />
+        android:text="Water"
+        android:textSize="20sp"
+        android:padding="5dp"  />
 
     <CheckBox
         android:id="@+id/bed"
@@ -73,6 +85,18 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/water"
         android:layout_below="@+id/water"
-        android:text="Bed" />
+        android:text="Bed"
+        android:textSize="20sp"
+        android:padding="5dp"  />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicines"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:text="Search" />
 
 </RelativeLayout>

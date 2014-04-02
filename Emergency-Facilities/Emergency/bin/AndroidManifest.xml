@@ -22,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.example.emergency.AskHelp"
             android:label="@string/title_activity_ask_help"
@@ -34,10 +33,15 @@
         <activity
             android:name="com.example.emergency.GiveHelp"
             android:label="@string/title_activity_give_help"
-            android:theme="@style/Theme.AppCompat.Light" > >
+            android:theme="@style/Theme.AppCompat.Light" >
+ >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.emergency.StartScreen"  />
+                android:value="com.example.emergency.StartScreen" />
+        </activity>
+        <activity
+            android:name="com.example.emergency.Result"
+            android:label="@string/title_activity_result" >
         </activity>
     </application>
 
