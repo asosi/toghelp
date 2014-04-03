@@ -107,6 +107,9 @@
         android:layout_below="@+id/linearLayout2"
         android:layout_marginTop="20dp"
         android:text="@string/multilines"
+        android:padding="10dp"
+        android:background="@drawable/selettorebutton"
+        android:textColor="@color/bianco"
          />
 
     <Button
@@ -116,6 +119,9 @@
         android:layout_alignBaseline="@+id/select"
         android:layout_alignBottom="@+id/select"
         android:layout_alignLeft="@+id/phone"
-        android:text="@string/multilines2" />
+        android:text="@string/multilines2"
+        android:padding="10dp"
+        android:background="@drawable/selettorebutton"
+        android:textColor="@color/bianco" />
 
 </RelativeLayout>

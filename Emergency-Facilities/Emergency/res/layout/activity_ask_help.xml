@@ -97,6 +97,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:padding="5dp"
+        android:background="@drawable/selettorebutton"
+        android:textColor="@color/bianco"
         android:text="Search" />
 
 </RelativeLayout>

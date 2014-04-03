@@ -10,31 +10,40 @@
     tools:context=".StartScreen" >
 
     <Button
-        android:id="@+id/givehelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/askhelp"
-        android:layout_below="@+id/askhelp"
-        android:layout_marginTop="40dp"
-        android:text="Give help" />
-
-    <Button
         android:id="@+id/situation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selettorebutton"
         android:layout_alignLeft="@+id/askhelp"
         android:layout_below="@+id/givehelp"
-        android:layout_marginTop="40dp"
-        android:text="Situation" />
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Situation"
+        android:textColor="@color/bianco" />
+
+    <Button
+        android:id="@+id/givehelp"
+        android:layout_below="@+id/askhelp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selettorebutton"
+        android:text="Give help"
+        android:textColor="@color/bianco" />
 
     <Button
         android:id="@+id/askhelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:text="Ask Help" />
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/givehelp"
+        android:layout_below="@+id/titoloapp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/selettorebutton"
+        android:text="Ask Help"
+        android:textColor="@color/bianco"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/titoloapp"
@@ -42,9 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="45dp"
         android:text="@string/app_name"
         android:textColor="@color/rossoscuro"
-        android:textSize="40sp" />
+        android:textSize="70sp" />
     
 </RelativeLayout>

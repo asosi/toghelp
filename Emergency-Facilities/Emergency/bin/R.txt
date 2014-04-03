@@ -242,8 +242,10 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_launcher 0x7f020057
-int drawable princebuttonshape 0x7f020058
-int drawable shapelistitem 0x7f020059
+int drawable selettorebutton 0x7f020058
+int drawable shapebutton 0x7f020059
+int drawable shapebuttonfocus 0x7f02005a
+int drawable shapelistitem 0x7f02005b
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -280,7 +282,7 @@ int id expanded_menu 0x7f05002c
 int id firstaid 0x7f05003f
 int id food 0x7f05003e
 int id getlocation 0x7f05004a
-int id givehelp 0x7f050059
+int id givehelp 0x7f05005b
 int id helpslist 0x7f050049
 int id helpssent 0x7f050048
 int id home 0x7f050014
@@ -330,7 +332,7 @@ int id shortcut 0x7f05002e
 int id showCustom 0x7f050007
 int id showHome 0x7f050004
 int id showTitle 0x7f050006
-int id situation 0x7f05005b
+int id situation 0x7f050059
 int id split_action_bar 0x7f05001e
 int id submit_area 0x7f050039
 int id tabMode 0x7f050002

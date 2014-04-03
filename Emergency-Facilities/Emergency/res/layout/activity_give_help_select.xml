@@ -112,6 +112,8 @@
         android:layout_marginBottom="50dp"
         android:layout_centerHorizontal="true"
         android:padding="5dp"
-        android:text="Send!" />
+        android:text="Send!"
+        android:background="@drawable/selettorebutton"
+        android:textColor="@color/bianco" />
 
 </RelativeLayout>
