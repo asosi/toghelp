@@ -104,11 +104,12 @@
 
     <Button
         android:id="@+id/send"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="28dp"
-        android:layout_toRightOf="@+id/water"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/notes"
+        android:layout_marginTop="30dp"
         android:background="@drawable/selettorebutton"
         android:padding="5dp"
         android:text="Send!"
