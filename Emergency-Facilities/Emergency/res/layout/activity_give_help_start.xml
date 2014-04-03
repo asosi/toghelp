@@ -28,27 +28,6 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/getlocation"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phone"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:text="Get Location" />
-
-    <TextView
-        android:id="@+id/adress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/getlocation"
-        android:layout_marginTop="15dp"
-        android:text="No location"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <EditText
         android:id="@+id/namesurname"
         android:layout_width="wrap_content"
@@ -84,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/adress"
+        android:layout_below="@id/textView1"
         android:background="@color/verdescuro"
         android:layout_marginTop="40dp"
         android:padding="3dp" >
@@ -123,5 +102,74 @@
         android:padding="10dp"
         android:background="@drawable/selettorebutton"
         android:textColor="@color/bianco" />
+
+    <Button
+        android:id="@+id/getlocation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="18dp"
+        android:text="Get Location" />
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignTop="@+id/getlocation"
+        android:gravity="center"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adress"
+        android:layout_below="@+id/adress"
+        android:text="City"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/postalcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/city"
+        android:layout_centerVertical="true"
+        android:text="Postal code"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/paese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/postalcode"
+        android:layout_below="@+id/postalcode"
+        android:text="Country"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/paese"
+        android:layout_marginTop="20dp"
+        android:text="Area of availability"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/getlocation"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:ems="10"
+        android:hint="Km"
+        android:inputType="numberDecimal" />
 
 </RelativeLayout>
