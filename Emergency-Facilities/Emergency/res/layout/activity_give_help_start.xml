@@ -40,8 +40,6 @@
         android:hint="Name and Surname"
         android:inputType="textPersonName"
         android:paddingLeft="5dp" >
-
-        <requestFocus />
     </EditText>
 
     <EditText
@@ -103,23 +101,14 @@
         android:background="@drawable/selettorebutton"
         android:textColor="@color/bianco" />
 
-    <Button
-        android:id="@+id/getlocation"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/phone"
-        android:layout_below="@+id/phone"
-        android:layout_marginTop="18dp"
-        android:text="Get Location" />
-
     <TextView
         android:id="@+id/adress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/phone"
-        android:layout_alignTop="@+id/getlocation"
-        android:gravity="center"
+        android:layout_below="@id/phone"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="25dp"
         android:text="Address"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -129,6 +118,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/adress"
         android:layout_below="@+id/adress"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
         android:text="City"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -137,8 +128,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/city"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/city"
         android:text="Postal code"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -148,6 +141,8 @@
         android:layout_alignLeft="@+id/postalcode"
         android:layout_below="@+id/postalcode"
         android:text="Country"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -157,6 +152,7 @@
         android:layout_alignLeft="@+id/linearLayout2"
         android:layout_below="@+id/paese"
         android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
         android:text="Area of availability"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -164,12 +160,26 @@
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
         android:layout_alignLeft="@+id/getlocation"
-        android:layout_alignRight="@+id/linearLayout2"
         android:ems="10"
+        android:layout_marginRight="5dp"
         android:hint="Km"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/getlocation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:text="Get Location" />
 
 </RelativeLayout>
