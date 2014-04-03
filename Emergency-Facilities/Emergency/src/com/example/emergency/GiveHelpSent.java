@@ -3,6 +3,7 @@ package com.example.emergency;
 import java.util.LinkedList;
 import java.util.List;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -12,16 +13,20 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class GiveHelpSent extends ActionBarActivity {
-
 	String date, offered;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		Intent intent = getIntent();
+		Boolean issent = intent.getBooleanExtra(getPackageName(), false);
+		
+		if (issent == true) {
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		super.onCreate(savedInstanceState);

@@ -4,6 +4,7 @@ package com.example.emergency;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.R.bool;
 import android.os.Bundle;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -33,10 +34,13 @@ public class GiveHelpSelect extends ActionBarActivity {
 			
 			@Override
 			public void onClick(View arg0) {
-					AlertDialog.Builder builder = new AlertDialog.Builder(GiveHelpSelect.this);
 				
+					boolean issent = true;
+					
+					AlertDialog.Builder builder = new AlertDialog.Builder(GiveHelpSelect.this);
+					
 					builder.setTitle("Great!");
-					builder.setMessage("Your precious help has been sent! Thank you!");
+					builder.setMessage("Your precious help has been sent!"+"\n"+"Thank you so much!");
 					builder.setCancelable(true);
 					
 		            final AlertDialog dialog1 = builder.create();
@@ -52,8 +56,9 @@ public class GiveHelpSelect extends ActionBarActivity {
 	                
 	                
 					Intent myIntent = new Intent(GiveHelpSelect.this, GiveHelpSent.class);
+					myIntent.putExtra(getPackageName(), issent);
+				    
 				    GiveHelpSelect.this.startActivity(myIntent);
-				
 				}
 		});  
 	}
