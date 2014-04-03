@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class HelpDetails extends ActionBarActivity {
@@ -18,6 +19,7 @@ public class HelpDetails extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_help_details);
 		
 		ActionBar actionBar = getSupportActionBar();

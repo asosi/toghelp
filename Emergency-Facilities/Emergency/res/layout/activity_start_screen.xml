@@ -6,8 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/bianco"
-    tools:context=".StartScreen" >
+    tools:context=".StartScreen"
+    android:background="@drawable/back" >
 
     <Button
         android:id="@+id/situation"
@@ -53,7 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:text="@string/app_name"
-        android:textColor="@color/rossoscuro"
+        android:textColor="@color/verdescuro"
         android:textSize="70sp" />
     
 </RelativeLayout>
