@@ -1,14 +1,13 @@
 <resources>
-
-    
+ 
     <color name="verdechiaro">#2ecc71</color>
     <color name="verdechiaroTRASP">#662ecc71</color>
-    <color name="verdescuro">#27ae60</color>
+	<color name="verdescuro">#813939</color>						<!--     #27ae60</color> -->
     <color name="verdescuroTRASP">#6627ae60</color>
     <color name="asfaltochiaro">#34495e</color>
     <color name="asfaltoscuro">#2c3e50</color>
-    <color name="bluchiaro">#3498db</color>
-    <color name="bluscuro">#2980b9</color>
+	<color name="bluchiaro">#fb8333</color>						<!--     #3498db</color> -->
+	<color name="bluscuro">#c96421</color>								<!--     #2980b9</color> -->
     <color name="rossochiaro">#e74c3c</color>
     <color name="rossoscuro">#c0392b</color>
     <color name="grigiochiaro">#bdc3c7</color>
@@ -16,6 +15,5 @@
     <color name="bianco">#fff</color>
     <color name="biancoTRASP">#33ffffff</color>
     <color name="nero">#000</color>
-    
 
 </resources>

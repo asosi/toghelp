@@ -49,7 +49,7 @@
         android:layout_alignLeft="@+id/namesurname"
         android:layout_alignRight="@+id/namesurname"
         android:layout_below="@+id/namesurname"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Phone"
         android:inputType="phone"
@@ -85,6 +85,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/multilines"
         android:padding="10dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/selettorebutton"
         android:textColor="@color/bianco"
          />
@@ -98,6 +99,7 @@
         android:layout_alignLeft="@+id/phone"
         android:text="@string/multilines2"
         android:padding="10dp"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/selettorebutton"
         android:textColor="@color/bianco" />
 
@@ -153,30 +155,25 @@
         android:text="Area of availability"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignLeft="@+id/getlocation"
-        android:ems="10"
-        android:layout_marginRight="5dp"
-        android:hint="Km"
-        android:inputType="numberDecimal" >
-
-        <requestFocus />
-    </EditText>
-
     <Button
         android:id="@+id/getlocation"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignRight="@+id/phone"
         android:layout_below="@+id/phone"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="5dp"
-        android:text="Get Location" />
+        android:background="@android:drawable/ic_menu_compass" />
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:ems="10"
+        android:hint="Km"
+        android:inputType="numberDecimal" >
+    </EditText>
+    
 </RelativeLayout>

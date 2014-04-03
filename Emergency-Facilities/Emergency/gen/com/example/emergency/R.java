@@ -803,15 +803,21 @@ containing a value of this type.
         public static final int bianco=0x7f07000f;
         public static final int biancoTRASP=0x7f070010;
         public static final int bluchiaro=0x7f070009;
+        /**      #3498db</color> 
+         */
         public static final int bluscuro=0x7f07000a;
         public static final int grigiochiaro=0x7f07000d;
         public static final int grigioscuro=0x7f07000e;
         public static final int nero=0x7f070011;
+        /**      #2980b9</color> 
+         */
         public static final int rossochiaro=0x7f07000b;
         public static final int rossoscuro=0x7f07000c;
         public static final int verdechiaro=0x7f070003;
         public static final int verdechiaroTRASP=0x7f070004;
         public static final int verdescuro=0x7f070005;
+        /**      #27ae60</color> 
+         */
         public static final int verdescuroTRASP=0x7f070006;
     }
     public static final class dimen {
