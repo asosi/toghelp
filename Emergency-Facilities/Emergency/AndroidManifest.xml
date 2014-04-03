@@ -12,13 +12,11 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-         >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.emergency.StartScreen"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,15 +34,16 @@
         <activity
             android:name="com.example.emergency.GiveHelp"
             android:label="@string/title_activity_give_help"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
         </activity>
         <activity
             android:name="com.example.emergency.Result"
-            android:label="@string/title_activity_result" >
+            android:label="@string/title_activity_result"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.AskHelp" />
@@ -56,6 +55,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.Result" />
         </activity>
+
         <fragment
             android:name="com.example.emergency.AFragment1"
             android:label="@string/title_activity_afragment" >
@@ -64,6 +64,31 @@
             android:name="com.example.emergency.BFragment"
             android:label="@string/title_activity_bfragment" >
         </fragment>
+
+        <activity
+            android:name="com.example.emergency.GiveHelpFirst"
+            android:label="@string/title_activity_give_help_first"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.emergency.StartScreen" />
+        </activity>
+        <activity
+            android:name="com.example.emergency.GiveHelpSecond"
+            android:label="@string/title_activity_give_help_second"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.emergency.StartScreen" />
+        </activity>
+        <activity
+            android:name="com.example.emergency.GiveHelpSent"
+            android:label="@string/title_activity_give_help_sent"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.emergency.GiveHelpFirst" />
+        </activity>
     </application>
 
 </manifest>

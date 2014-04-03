@@ -1,0 +1,57 @@
+package com.example.emergency;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+public class GiveHelpFirst extends ActionBarActivity {
+
+	Button next;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_give_help_first);
+		
+		ActionBar actionBar = getSupportActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+	    
+	    next = (Button) findViewById(R.id.next1);
+	    
+	    next.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+			
+				Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSecond.class);
+			    GiveHelpFirst.this.startActivity(myIntent);
+			} 
+		});
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.give_help_first, menu);
+		return true;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	    	case R.id.seehelpslist:
+	        	Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSecond.class);
+			    GiveHelpFirst.this.startActivity(myIntent);
+	            return true;
+	        
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
+}

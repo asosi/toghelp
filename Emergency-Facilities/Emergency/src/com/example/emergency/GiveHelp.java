@@ -26,11 +26,8 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-public class GiveHelp extends FragmentActivity{
+public class GiveHelp extends FragmentActivity	{
 
-	private ViewPager mPager;
-	private PagerAdapter mPagerAdapter;
-	private static final int NUM_PAGES = 2;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -1076,6 +1076,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
+        public static final int seehelpslist=0x7f050060;
         public static final int send=0x7f05004a;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
@@ -1150,12 +1151,15 @@ containing a value of this type.
         public static final int activity_ask_help=0x7f030019;
         public static final int activity_bfragment=0x7f03001a;
         public static final int activity_give_help1=0x7f03001b;
-        public static final int activity_help_details=0x7f03001c;
-        public static final int activity_result=0x7f03001d;
-        public static final int activity_start_screen=0x7f03001e;
-        public static final int row=0x7f03001f;
-        public static final int rowhelpsent=0x7f030020;
-        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int activity_give_help_first=0x7f03001c;
+        public static final int activity_give_help_second=0x7f03001d;
+        public static final int activity_give_help_sent=0x7f03001e;
+        public static final int activity_help_details=0x7f03001f;
+        public static final int activity_result=0x7f030020;
+        public static final int activity_start_screen=0x7f030021;
+        public static final int row=0x7f030022;
+        public static final int rowhelpsent=0x7f030023;
+        public static final int support_simple_spinner_dropdown_item=0x7f030024;
     }
     public static final class menu {
         public static final int a=0x7f0c0000;
@@ -1163,12 +1167,15 @@ containing a value of this type.
         public static final int b=0x7f0c0002;
         public static final int give_help=0x7f0c0003;
         public static final int give_help_create=0x7f0c0004;
-        public static final int give_help_list=0x7f0c0005;
-        public static final int help_details=0x7f0c0006;
-        public static final int result=0x7f0c0007;
-        public static final int situation=0x7f0c0008;
-        public static final int start_screen=0x7f0c0009;
-        public static final int tab_listener=0x7f0c000a;
+        public static final int give_help_first=0x7f0c0005;
+        public static final int give_help_list=0x7f0c0006;
+        public static final int give_help_second=0x7f0c0007;
+        public static final int give_help_sent=0x7f0c0008;
+        public static final int help_details=0x7f0c0009;
+        public static final int result=0x7f0c000a;
+        public static final int situation=0x7f0c000b;
+        public static final int start_screen=0x7f0c000c;
+        public static final int tab_listener=0x7f0c000d;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1220,7 +1227,10 @@ containing a value of this type.
         public static final int title_activity_fragment=0x7f0a0016;
         public static final int title_activity_give_help=0x7f0a0012;
         public static final int title_activity_give_help_create=0x7f0a0017;
+        public static final int title_activity_give_help_first=0x7f0a001b;
         public static final int title_activity_give_help_list=0x7f0a0018;
+        public static final int title_activity_give_help_second=0x7f0a001c;
+        public static final int title_activity_give_help_sent=0x7f0a001d;
         public static final int title_activity_help_details=0x7f0a0014;
         public static final int title_activity_result=0x7f0a0013;
         public static final int title_activity_start_screen=0x7f0a0010;

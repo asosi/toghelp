@@ -15,5 +15,8 @@
     <string name="title_activity_give_help_list">GiveHelpList</string>
     <string name="title_activity_afragment">AFragment</string>
     <string name="title_activity_bfragment">BFragment</string>
+    <string name="title_activity_give_help_first">GiveHelpFirst</string>
+    <string name="title_activity_give_help_second">GiveHelpSecond</string>
+    <string name="title_activity_give_help_sent">GiveHelpSent</string>
 
 </resources>

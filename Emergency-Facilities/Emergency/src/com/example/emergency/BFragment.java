@@ -1,6 +1,6 @@
 package com.example.emergency;
 
-import java.util.LinkedList;
+
 import java.util.List;
 
 import android.os.Bundle;

@@ -35,7 +35,7 @@ public class StartScreen extends Activity {
 					@Override
 					public void onClick(View arg0) {
 					
-						Intent myIntent = new Intent(StartScreen.this, GiveHelp.class);
+						Intent myIntent = new Intent(StartScreen.this, GiveHelpFirst.class);
 					    StartScreen.this.startActivity(myIntent);
 					} 
 				});
