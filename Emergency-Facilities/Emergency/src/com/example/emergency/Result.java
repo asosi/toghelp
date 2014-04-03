@@ -26,7 +26,7 @@ public class Result extends Activity {
 		list.add(new SingleResult("Davide Campigotto","1.6 km","Food, water"));
 		list.add(new SingleResult("Francesco Boschini","23 km","Food, bed"));
 		
-		ListAdapter adapter = new com.example.emergency.ListAdapter(this, R.layout.row, list);
+		ListAdapter adapter = new com.example.emergency.ListAdapterSearch(this, R.layout.row, list);
         listview.setAdapter(adapter);
 		
 		

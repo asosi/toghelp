@@ -1,7 +1,6 @@
 package com.example.emergency;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -12,7 +11,7 @@ import android.widget.Button;
 
 public class GiveHelpFirst extends ActionBarActivity {
 
-	Button next;
+	Button send;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +21,14 @@ public class GiveHelpFirst extends ActionBarActivity {
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
-	    next = (Button) findViewById(R.id.next);
+	    send = (Button) findViewById(R.id.send);
 	    
-	    next.setOnClickListener(new View.OnClickListener() {
+	    send.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 			
-				Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSecond.class);
+				Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSent.class);
 			    GiveHelpFirst.this.startActivity(myIntent);
 			} 
 		});
@@ -42,16 +41,16 @@ public class GiveHelpFirst extends ActionBarActivity {
 		return true;
 	}
 
-	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle presses on the action bar items
-	    switch (item.getItemId()) {
-	    	case R.id.seehelpslist:
-	        	Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSecond.class);
-			    GiveHelpFirst.this.startActivity(myIntent);
-	            return true;
-	        
-	        default:
-	            return super.onOptionsItemSelected(item);
-	    }
-	}
+//	public boolean onOptionsItemSelected(MenuItem item) {
+//	    // Handle presses on the action bar items
+//	    switch (item.getItemId()) {
+//	    	case R.id.seehelpslist:
+//	        	Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSecond.class);
+//			    GiveHelpFirst.this.startActivity(myIntent);
+//	            return true;
+//	        
+//	        default:
+//	            return super.onOptionsItemSelected(item);
+//	    }
+//	}
 }

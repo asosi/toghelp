@@ -18,5 +18,8 @@
     <string name="title_activity_give_help_first">Give Help - Donations</string>
     <string name="title_activity_give_help_second">Give Help - Contacts</string>
     <string name="title_activity_give_help_sent">Helps Sent</string>
+    <string name="title_activity_give_help_start">GiveHelpStart</string>
+    <string name="multilines">Select and give\ndonations</string>
+    <string name="multilines2">See your\n given helps</string>
 
 </resources>

@@ -89,6 +89,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
         </activity>
+        <activity
+            android:name="com.example.emergency.GiveHelpStart"
+            android:label="@string/title_activity_give_help_start" >
+        </activity>
     </application>
 
 </manifest>

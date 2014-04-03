@@ -23,53 +23,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
-            android:text="Provide your info"
+            android:text="Your info"
             android:textColor="@color/bianco"
             android:textSize="20sp" />
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/namesurname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Name and Surname"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp" >
-    </EditText>
-
-    <EditText
-        android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/namesurname"
-        android:layout_below="@+id/namesurname"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Phone"
-        android:inputType="phone"
-        android:paddingLeft="5dp" />
-
-    <Button
-        android:id="@+id/send"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:padding="5dp"
-        android:text="Send" />
-
-    <Button
-        android:id="@+id/previous"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:padding="5dp"
-        android:text="Previous" />
 
     <Button
         android:id="@+id/getlocation"
@@ -78,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/phone"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="22dp"
         android:text="Get Location" />
 
     <TextView
@@ -90,5 +47,74 @@
         android:text="No location"
         android:layout_centerHorizontal="true"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/namesurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Name and Surname"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namesurname"
+        android:layout_alignRight="@+id/namesurname"
+        android:layout_below="@+id/namesurname"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:paddingLeft="5dp" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/adress"
+        android:background="@color/verdescuro"
+        android:layout_marginTop="25dp"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Choose what you want to do"
+            android:textColor="@color/bianco"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/phone"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="20dp"
+        android:text="@string/multilines"
+         />
+
+    <Button
+        android:id="@+id/see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/select"
+        android:layout_alignBottom="@+id/select"
+        android:layout_alignLeft="@+id/phone"
+        android:text="@string/multilines2" />
 
 </RelativeLayout>

@@ -9,9 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-	public class ListAdapter extends ArrayAdapter<SingleResult>{
+	public class ListAdapterSearch extends ArrayAdapter<SingleResult>{
 
-	    public ListAdapter(Context context, int textViewResourceId,
+	    public ListAdapterSearch(Context context, int textViewResourceId,
 	            List list) {
 	        super(context, textViewResourceId, list);
 	    }
