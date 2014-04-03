@@ -13,37 +13,40 @@
         android:id="@+id/situation"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:background="@drawable/selettorebutton"
         android:layout_alignLeft="@+id/askhelp"
+        android:layout_alignRight="@+id/askhelp"
         android:layout_below="@+id/givehelp"
         android:layout_marginTop="50dp"
-        android:textSize="20sp"
+        android:background="@drawable/selettorebutton"
         android:text="Situation"
-        android:textColor="@color/bianco" />
+        android:textColor="@color/bianco"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/givehelp"
-        android:layout_below="@+id/askhelp"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
         android:layout_width="120dp"
         android:layout_height="60dp"
+        android:layout_alignLeft="@+id/situation"
+        android:layout_alignRight="@+id/askhelp"
+        android:layout_below="@+id/askhelp"
         android:layout_marginTop="50dp"
         android:background="@drawable/selettorebutton"
         android:text="Give help"
-        android:textColor="@color/bianco" />
+        android:textColor="@color/bianco"
+        android:textSize="30sp"/>
 
     <Button
         android:id="@+id/askhelp"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:layout_alignLeft="@+id/givehelp"
+        android:layout_alignLeft="@+id/titoloapp"
+        android:layout_alignRight="@+id/titoloapp"
         android:layout_below="@+id/titoloapp"
         android:layout_marginTop="65dp"
         android:background="@drawable/selettorebutton"
         android:text="Ask Help"
         android:textColor="@color/bianco"
-        android:textSize="20sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/titoloapp"
@@ -54,6 +57,6 @@
         android:layout_marginTop="45dp"
         android:text="@string/app_name"
         android:textColor="@color/verdescuro"
-        android:textSize="70sp" />
+        android:textSize="80sp" />
     
 </RelativeLayout>

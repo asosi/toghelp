@@ -47,6 +47,16 @@ public class StartScreen extends Activity {
 					    StartScreen.this.startActivity(myIntent);
 					} 
 				});
+		
+		situation.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+			
+				Intent myIntent = new Intent(StartScreen.this, SituationMap.class);
+			    StartScreen.this.startActivity(myIntent);
+			} 
+		});
 	}
 
 	@Override
