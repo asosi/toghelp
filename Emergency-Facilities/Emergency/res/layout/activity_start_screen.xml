@@ -6,16 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bianco"
     tools:context=".StartScreen" >
-
-    <Button
-        android:id="@+id/askhelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="Ask Help" />
 
     <Button
         android:id="@+id/givehelp"
@@ -34,5 +26,25 @@
         android:layout_below="@+id/givehelp"
         android:layout_marginTop="40dp"
         android:text="Situation" />
+
+    <Button
+        android:id="@+id/askhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Ask Help" />
+
+    <TextView
+        android:id="@+id/titoloapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/app_name"
+        android:textColor="@color/rossoscuro"
+        android:textSize="40sp" />
     
 </RelativeLayout>
