@@ -254,7 +254,7 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f050065
+int id action_settings 0x7f050066
 int id activity_chooser_view_content 0x7f050025
 int id adress 0x7f050048
 int id always 0x7f05000b
@@ -265,6 +265,7 @@ int id checkbox 0x7f05002d
 int id choose 0x7f050055
 int id collapseActionView 0x7f05000d
 int id contact 0x7f050058
+int id date 0x7f050064
 int id default_activity_button 0x7f050028
 int id dialog 0x7f05000e
 int id disableHome 0x7f050008
@@ -302,7 +303,7 @@ int id never 0x7f050009
 int id next1 0x7f050044
 int id none 0x7f050010
 int id normal 0x7f050000
-int id offered 0x7f050064
+int id offered 0x7f050065
 int id offers 0x7f05005b
 int id offerte 0x7f05005c
 int id pchildren 0x7f050040
@@ -325,7 +326,7 @@ int id search_plate 0x7f050036
 int id search_src_text 0x7f050037
 int id search_voice_btn 0x7f05003b
 int id see 0x7f050057
-int id seehelpslist 0x7f050066
+int id seehelpslist 0x7f050067
 int id select 0x7f050056
 int id send 0x7f05004a
 int id shortcut 0x7f05002e

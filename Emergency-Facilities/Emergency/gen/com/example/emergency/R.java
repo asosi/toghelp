@@ -1010,7 +1010,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050065;
+        public static final int action_settings=0x7f050066;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int adress=0x7f050048;
         public static final int always=0x7f05000b;
@@ -1021,6 +1021,7 @@ containing a value of this type.
         public static final int choose=0x7f050055;
         public static final int collapseActionView=0x7f05000d;
         public static final int contact=0x7f050058;
+        public static final int date=0x7f050064;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
@@ -1058,7 +1059,7 @@ containing a value of this type.
         public static final int next1=0x7f050044;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int offered=0x7f050064;
+        public static final int offered=0x7f050065;
         public static final int offers=0x7f05005b;
         public static final int offerte=0x7f05005c;
         public static final int pchildren=0x7f050040;
@@ -1081,7 +1082,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
         public static final int see=0x7f050057;
-        public static final int seehelpslist=0x7f050066;
+        public static final int seehelpslist=0x7f050067;
         public static final int select=0x7f050056;
         public static final int send=0x7f05004a;
         public static final int shortcut=0x7f05002e;

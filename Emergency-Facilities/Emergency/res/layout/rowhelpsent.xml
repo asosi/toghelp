@@ -7,10 +7,10 @@
     android:paddingBottom="10dp">"
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="Date"
         android:textSize="22sp" />
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/name"
+        android:layout_below="@+id/date"
         android:text="I Offer:"
         android:textSize="18sp" />
     

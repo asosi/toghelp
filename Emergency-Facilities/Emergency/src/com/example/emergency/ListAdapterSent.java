@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-	public class ListAdapterSent extends ArrayAdapter<SingleResult>{
+	public class ListAdapterSent extends ArrayAdapter<SingleSent>{
 
 	    public ListAdapterSent(Context context, int textViewResourceId,
 	            List list) {
@@ -22,13 +22,13 @@ import android.widget.ToggleButton;
 	             .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	        convertView = inflater.inflate(R.layout.rowhelpsent, null);
 	        
-	        TextView name = (TextView)convertView.findViewById(R.id.name);
+	        TextView date = (TextView)convertView.findViewById(R.id.date);
 	        TextView offered = (TextView)convertView.findViewById(R.id.offered);
 	       
-	        SingleResult result = getItem(position);
+	        SingleSent sent = getItem(position);
 	        
-	        name.setText(result.getname());
-	        //offered.setText(result.getoffered());
+	        date.setText(sent.getdate());
+	        offered.setText(sent.getoffered());
 	        
 	        return convertView;
 	    }

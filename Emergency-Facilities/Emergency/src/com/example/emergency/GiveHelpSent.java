@@ -26,23 +26,15 @@ public class GiveHelpSent extends ActionBarActivity {
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
 	    ListView listview = (ListView)findViewById(R.id.helpslist);
-		List list = new LinkedList();
+		List list1 = new LinkedList();
 		
-//		list.add(new SingleResult("Andrea Sosi","Food, medicines"));
-//		list.add(new SingleResult("Andrea Sosi","Food, water"));
-//		list.add(new SingleResult("Andrea Sosi","Food, bed"));
+		list1.add(new SingleSent("2 Aprile 2014", "Food, medicines"));
+		list1.add(new SingleSent("3 Aprile 2014", "Medicines, water"));
+		list1.add(new SingleSent("4 Aprile 2014","Products for children, bed"));
 		
-		ListAdapter adapter = new com.example.emergency.ListAdapterSearch(this, R.layout.rowhelpsent, list);
+		ListAdapter adapter = new com.example.emergency.ListAdapterSent(this, R.layout.rowhelpsent, list1);
         listview.setAdapter(adapter);
-		
-		
-//        listview.setOnItemClickListener(new OnItemClickListener() {
-//			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//	            
-//	            Intent myIntent = new Intent(Result.this, HelpDetails.class);
-//	            startActivity(myIntent);
-//			}      
-//		});
+
 	}
 
 	@Override
