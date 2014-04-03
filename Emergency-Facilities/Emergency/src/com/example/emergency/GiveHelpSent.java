@@ -17,6 +17,8 @@ import android.widget.AdapterView.OnItemClickListener;
 
 public class GiveHelpSent extends ActionBarActivity {
 
+	String date, offered;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
