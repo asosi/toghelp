@@ -171,7 +171,7 @@
         android:background="@android:drawable/ic_menu_compass" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/area"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
@@ -189,7 +189,7 @@
         android:layout_below="@+id/linearLayout2"
         android:padding="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="18sp"
+        android:textSize="25sp"
         android:text="See your given helps"
         android:textColor="@color/verdescuro" />
 
@@ -200,7 +200,8 @@
         android:layout_alignLeft="@+id/linearLayout2"
         android:layout_below="@+id/see"
         android:padding="10dp"
-        android:textSize="18sp"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
         android:text="Select and give donation"
         android:textColor="@color/verdescuro"/>
     

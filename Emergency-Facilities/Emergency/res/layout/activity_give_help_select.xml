@@ -89,7 +89,7 @@
         android:padding="5dp"  />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/medicines"
@@ -106,12 +106,12 @@
         android:id="@+id/send"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_below="@id/editText1"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/water"
+        android:background="@drawable/selettorebutton"
         android:padding="5dp"
         android:text="Send!"
-        android:background="@drawable/selettorebutton"
         android:textColor="@color/bianco" />
 
 </RelativeLayout>
