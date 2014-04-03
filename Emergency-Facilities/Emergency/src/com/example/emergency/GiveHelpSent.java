@@ -3,7 +3,11 @@ package com.example.emergency;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.example.db.HelpGive;
+import com.example.db.SQLDatabase;
+
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -39,9 +43,19 @@ public class GiveHelpSent extends ActionBarActivity {
 	    ListView listview = (ListView)findViewById(R.id.helpslist);
 		List list1 = new LinkedList();
 		
-		list1.add(new SingleSent("2 Aprile 2014", "Food, medicines"));
-		list1.add(new SingleSent("3 Aprile 2014", "Medicines, water"));
-		list1.add(new SingleSent("4 Aprile 2014","Products for children, bed"));
+		SQLDatabase db = new SQLDatabase(this);
+		Cursor cursor = db.help();
+		try
+		{
+			while (cursor.moveToNext())
+			{
+				list1.add(new SingleSent(cursor.getString(cursor.getColumnIndex(HelpGive.NAME)), "Food, medicines"));
+			}
+		}
+		finally
+		{
+			cursor.close();
+		}
 		
 		ListAdapter adapter = new com.example.emergency.ListAdapterSent(this, R.layout.rowhelpsent, list1);
         listview.setAdapter(adapter);

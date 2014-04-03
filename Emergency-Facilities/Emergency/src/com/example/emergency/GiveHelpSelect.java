@@ -4,10 +4,14 @@ package com.example.emergency;
 import java.util.Timer;
 import java.util.TimerTask;
 import com.example.db.HelpGive;
+import com.example.db.SQLDatabase;
+
 import android.R.bool;
 import android.os.Bundle;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.appcompat.R.id;
@@ -26,6 +30,9 @@ public class GiveHelpSelect extends ActionBarActivity {
 	CheckBox[] checkBoxs = new CheckBox[6];
 	EditText enotes;
 	String notes;
+	Context c;
+	String pkg;
+	Intent intent;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,10 @@ public class GiveHelpSelect extends ActionBarActivity {
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    init();
+	    pkg = getPackageName();
+	    c=this;
+	    intent = getIntent();
+	    
 	    send = (Button) findViewById(R.id.send);
 	    
 	    send.setOnClickListener(new View.OnClickListener() {
@@ -64,10 +75,24 @@ public class GiveHelpSelect extends ActionBarActivity {
 	                    }
 	                }, 3000);
 	                
-	                
 					Intent myIntent = new Intent(GiveHelpSelect.this, GiveHelpSent.class);
 					myIntent.putExtra(getPackageName(), issent);
 				    
+					SQLDatabase sqldb = new SQLDatabase(c);
+					sqldb.insert(sqldb.db(), 
+							intent.getStringExtra(pkg+HelpGive.NAME),
+							intent.getStringExtra(pkg+HelpGive.PHONE),
+							notes,
+							intent.getDoubleExtra(pkg+HelpGive.LAT,0.0),
+							intent.getDoubleExtra(pkg+HelpGive.LONG,0.0),
+							intent.getStringExtra(pkg+HelpGive.ADDRESS),
+							intent.getStringExtra(pkg+HelpGive.CITY),
+							intent.getStringExtra(pkg+HelpGive.POSTALCODE),
+							intent.getStringExtra(pkg+HelpGive.COUNTRY),
+							intent.getDoubleExtra(pkg+HelpGive.AREA,0.0),
+							value);
+					sqldb.close();
+					
 				    GiveHelpSelect.this.startActivity(myIntent);
 				}
 		});  

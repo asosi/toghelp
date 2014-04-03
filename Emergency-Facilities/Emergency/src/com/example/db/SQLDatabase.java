@@ -26,7 +26,7 @@ public class SQLDatabase extends SQLiteOpenHelper{
     			+ HelpGive.NAME+ " TEXT," 
     			+ HelpGive.PHONE + " VARCHAR(30),"
     			+ HelpGive.DATE + " DATETIME DEFAULT CURRENT_TIMESTAMP,"
-    			+ HelpGive.AVAILABLE + " BIT DEFAULT 0,"
+    			+ HelpGive.AVAILABLE + " BIT DEFAULT 1,"
     			+ HelpGive.DESCRIPTION + " TEXT,"
     			+ HelpGive.LAT + " DOUBLE,"
     			+ HelpGive.LONG + " DOUBLE,"
@@ -98,7 +98,7 @@ public class SQLDatabase extends SQLiteOpenHelper{
 		Cursor c = getReadableDatabase().query(
 						HelpGive.TABLE_NAME, //table
 						HelpGive.COLUMNS,	//columns
-						HelpGive.AVAILABLE + "= 1",
+						null,
 						null,	//selection args
 						null,	//group by
 						null,	//having

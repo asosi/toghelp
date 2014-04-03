@@ -1,6 +1,8 @@
 package com.example.emergency;
 
 
+import com.example.db.HelpGive;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -24,6 +26,7 @@ public class GiveHelpStart extends ActionBarActivity {
 	String namesurname, phone, address, city, postalcode, country;
 	Double area, lati, longi;
 	
+	String pkg;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +37,7 @@ public class GiveHelpStart extends ActionBarActivity {
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
 	    init();
+	    pkg = getPackageName();
 	    
 	    see = (TextView) findViewById(R.id.see);
 	    select = (TextView) findViewById(R.id.select);
@@ -56,6 +60,15 @@ public class GiveHelpStart extends ActionBarActivity {
 		    		setValues();
 		    		
 		    		Intent myIntent = new Intent(GiveHelpStart.this, GiveHelpSelect.class);
+		    		myIntent.putExtra(pkg+HelpGive.NAME, namesurname);
+					myIntent.putExtra(pkg+HelpGive.PHONE, phone);
+					myIntent.putExtra(pkg+HelpGive.ADDRESS, address);
+					myIntent.putExtra(pkg+HelpGive.CITY, city);
+					myIntent.putExtra(pkg+HelpGive.POSTALCODE, postalcode);
+					myIntent.putExtra(pkg+HelpGive.COUNTRY, country);
+					myIntent.putExtra(pkg+HelpGive.AREA, area);
+					myIntent.putExtra(pkg+HelpGive.LAT, lati);
+					myIntent.putExtra(pkg+HelpGive.LONG, longi);
 		    		GiveHelpStart.this.startActivity(myIntent);
 		    	} 
 		    });
@@ -94,7 +107,7 @@ public class GiveHelpStart extends ActionBarActivity {
 			        else
 			        {
 			            // can't get location
-			            // GPS or Network isÊ not enabled
+			            // GPS or Network isï¿½ not enabled
 			            // Ask user to enable GPS/network in settings
 			            gpsTracker.showSettingsAlert();
 			        }
@@ -113,6 +126,7 @@ public class GiveHelpStart extends ActionBarActivity {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
 	        case R.id.saveinfo:
+	        	setValues();
 	           return true;
 	               
 	        default:
