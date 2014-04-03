@@ -90,7 +90,7 @@
         android:padding="5dp"  />
 
     <Button
-        android:id="@+id/next1"
+        android:id="@+id/next"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -102,7 +102,7 @@
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/next1"
+        android:layout_above="@+id/next"
         android:layout_alignLeft="@+id/medicines"
         android:layout_alignRight="@+id/linearLayout1"
         android:layout_below="@+id/medicines"

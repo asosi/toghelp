@@ -22,7 +22,7 @@ public class GiveHelpFirst extends ActionBarActivity {
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
-	    next = (Button) findViewById(R.id.next1);
+	    next = (Button) findViewById(R.id.next);
 	    
 	    next.setOnClickListener(new View.OnClickListener() {
 			

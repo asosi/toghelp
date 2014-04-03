@@ -87,7 +87,7 @@
             android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.emergency.GiveHelpFirst" />
+                android:value="com.example.emergency.StartScreen" />
         </activity>
     </application>
 

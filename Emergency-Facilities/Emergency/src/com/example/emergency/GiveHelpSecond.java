@@ -21,6 +21,7 @@ public class GiveHelpSecond extends ActionBarActivity {
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
+	    send = (Button) findViewById(R.id.send);
 	    send.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
