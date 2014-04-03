@@ -4,7 +4,6 @@ package com.example.emergency;
 import java.util.Timer;
 import java.util.TimerTask;
 import com.example.db.HelpGive;
-
 import android.R.bool;
 import android.os.Bundle;
 import android.app.AlertDialog;
@@ -79,17 +78,6 @@ public class GiveHelpSelect extends ActionBarActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.give_help_first, menu);
 		return true;
-	}
-	
-	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle presses on the action bar items
-	    switch (item.getItemId()) {
-	        case R.id.saveinfo:
-	           return true;
-	        
-	        default:
-	           return super.onOptionsItemSelected(item);
-	    }
 	}
 	
 	private void init(){

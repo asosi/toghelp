@@ -1,11 +1,13 @@
 package com.example.emergency;
 
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -104,7 +106,18 @@ public class GiveHelpStart extends ActionBarActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.give_help_start, menu);
-		return true;
+		return super.onCreateOptionsMenu(menu);
+	}
+	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.saveinfo:
+	           return true;
+	               
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 	
 	private void init(){
