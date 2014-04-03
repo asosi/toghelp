@@ -79,33 +79,35 @@
             android:textSize="20sp" />
    
         </LinearLayout>
+    
+    
+<!--     <Button -->
+<!--         android:id="@+id/select" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignRight="@+id/phone" -->
+<!--         android:layout_below="@+id/linearLayout2" -->
+<!--         android:text="@string/multilines" -->
+<!--         android:padding="10dp" -->
+<!--         android:layout_marginRight="20dp" -->
+<!--         android:layout_marginTop="30dp" -->
+<!--         android:background="@drawable/selettorebutton" -->
+<!--         android:textColor="@color/bianco" -->
+<!--          /> -->
 
-    <Button
-        android:id="@+id/select"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/phone"
-        android:layout_below="@+id/linearLayout2"
-        android:text="@string/multilines"
-        android:padding="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/selettorebutton"
-        android:textColor="@color/bianco"
-         />
-
-    <Button
-        android:id="@+id/see"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/select"
-        android:layout_alignBottom="@+id/select"
-        android:layout_alignLeft="@+id/phone"
-        android:text="@string/multilines2"
-        android:padding="10dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/selettorebutton"
-        android:textColor="@color/bianco" />
+<!--     <Button -->
+<!--         android:id="@+id/see" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignBaseline="@+id/select" -->
+<!--         android:layout_alignBottom="@+id/select" -->
+<!--         android:layout_alignLeft="@+id/phone" -->
+<!--         android:text="@string/multilines2" -->
+<!--         android:padding="10dp" -->
+<!--         android:layout_marginLeft="20dp" -->
+<!--         android:background="@drawable/selettorebutton" -->
+<!--         android:textColor="@color/bianco" -->
+<!--         android:drawableBottom="@android:drawable/ic_dialog_info" /> -->
 
     <TextView
         android:id="@+id/adress"
@@ -178,6 +180,29 @@
         android:ems="10"
         android:hint="Km"
         android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="See your given helps"
+        android:textColor="@color/verdescuro" />
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/see"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="Select and give donation"
+        android:textColor="@color/verdescuro"/>
     
 </RelativeLayout>
 </ScrollView>
