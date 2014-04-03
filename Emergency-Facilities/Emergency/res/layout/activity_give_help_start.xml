@@ -119,7 +119,6 @@
         android:layout_alignLeft="@+id/adress"
         android:layout_below="@+id/adress"
         android:paddingLeft="5dp"
-        android:layout_marginTop="5dp"
         android:text="City"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -131,7 +130,6 @@
         android:layout_below="@id/city"
         android:text="Postal code"
         android:paddingLeft="5dp"
-        android:layout_marginTop="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -142,7 +140,6 @@
         android:layout_below="@+id/postalcode"
         android:text="Country"
         android:paddingLeft="5dp"
-        android:layout_marginTop="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView

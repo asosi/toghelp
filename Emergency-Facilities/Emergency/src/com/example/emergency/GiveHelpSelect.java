@@ -1,11 +1,15 @@
 package com.example.emergency;
 
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -24,19 +28,34 @@ public class GiveHelpSelect extends ActionBarActivity {
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
 	    send = (Button) findViewById(R.id.send);
-	   
-	    
+	  
 	    send.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
-			
-				Intent myIntent = new Intent(GiveHelpSelect.this, GiveHelpSent.class);
-			    GiveHelpSelect.this.startActivity(myIntent);
-			} 
-		});
-	    
-	   
+					AlertDialog.Builder builder = new AlertDialog.Builder(GiveHelpSelect.this);
+				
+					builder.setTitle("Great!");
+					builder.setMessage("Your precious help has been sent! Thank you!");
+					builder.setCancelable(true);
+					
+		            final AlertDialog dialog1 = builder.create();
+		            dialog1.show();
+		            
+		            final Timer t = new Timer();
+	                t.schedule(new TimerTask() {
+	                    public void run() {
+	                        dialog1.dismiss();
+	                        t.cancel(); 
+	                    }
+	                }, 3000);
+	                
+	                
+					Intent myIntent = new Intent(GiveHelpSelect.this, GiveHelpSent.class);
+				    GiveHelpSelect.this.startActivity(myIntent);
+				
+				}
+		});  
 	}
 
 	@Override
@@ -46,16 +65,4 @@ public class GiveHelpSelect extends ActionBarActivity {
 		return true;
 	}
 
-//	public boolean onOptionsItemSelected(MenuItem item) {
-//	    // Handle presses on the action bar items
-//	    switch (item.getItemId()) {
-//	    	case R.id.seehelpslist:
-//	        	Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSecond.class);
-//			    GiveHelpFirst.this.startActivity(myIntent);
-//	            return true;
-//	        
-//	        default:
-//	            return super.onOptionsItemSelected(item);
-//	    }
-//	}
 }
