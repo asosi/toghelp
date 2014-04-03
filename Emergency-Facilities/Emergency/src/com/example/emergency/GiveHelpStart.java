@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class GiveHelpStart extends ActionBarActivity {
 
 	Button see, select, getLocation;
-	TextView showLocation;
+	TextView showAddress, showCity, showPostalCode, showCountry;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,6 @@ public class GiveHelpStart extends ActionBarActivity {
 		
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
-	    
-	    final GPSTracker gpsTracker = new GPSTracker(this);
 	    
 	    see = (Button) findViewById(R.id.see);
 	    select = (Button) findViewById(R.id.select);
@@ -56,24 +54,30 @@ public class GiveHelpStart extends ActionBarActivity {
 				@Override
 				public void onClick(View arg0) {
 					
-					// check if GPS enabled
 					
+					GPSTracker gpsTracker = new GPSTracker(GiveHelpStart.this);
 					
+					// check if GPS enabled					
 			        if (gpsTracker.canGetLocation())
 			        {
 			            String stringLatitude = String.valueOf(gpsTracker.latitude);
 			            String stringLongitude = String.valueOf(gpsTracker.longitude);
 			            
-			            showLocation = (TextView)findViewById(R.id.adress);
-
-			            showLocation.setText("Latitude: "+stringLatitude+" Longitude: "+stringLongitude);
+			            String country = gpsTracker.getCountryName(GiveHelpStart.this);
+			            String city = gpsTracker.getLocality(GiveHelpStart.this);
+			            String postalCode = gpsTracker.getPostalCode(GiveHelpStart.this);
+			            String addressLine = gpsTracker.getAddressLine(GiveHelpStart.this);
 			            
-			            /*
-			            String country = gpsTracker.getCountryName(this);
-			            String city = gpsTracker.getLocality(this);
-			            String postalCode = gpsTracker.getPostalCode(this);
-			            String addressLine = gpsTracker.getAddressLine(this);
-			            */
+			            showAddress = (TextView)findViewById(R.id.adress);
+			            showCity = (TextView)findViewById(R.id.city);
+			            showPostalCode = (TextView)findViewById(R.id.postalcode);
+			            showCountry = (TextView)findViewById(R.id.paese);
+			            
+			            showAddress.setText(addressLine);
+			            showCity.setText(city);
+			            showPostalCode.setText(postalCode);
+			            showCountry.setText(country);
+			            
 			        }
 			        else
 			        {
