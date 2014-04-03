@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/textView1"
+        android:layout_below="@+id/textView2"
         android:background="@color/verdescuro"
         android:layout_marginTop="40dp"
         android:padding="3dp" >
@@ -151,7 +151,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout2"
