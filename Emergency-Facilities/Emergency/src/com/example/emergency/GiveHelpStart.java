@@ -8,10 +8,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class GiveHelpStart extends ActionBarActivity {
 
-	Button see, select;
+	Button see, select, getLocation;
+	TextView showLocation;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +23,11 @@ public class GiveHelpStart extends ActionBarActivity {
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
+	    final GPSTracker gpsTracker = new GPSTracker(this);
+	    
 	    see = (Button) findViewById(R.id.see);
 	    select = (Button) findViewById(R.id.select);
+	    getLocation = (Button) findViewById(R.id.getlocation);
 	   
 		    see.setOnClickListener(new View.OnClickListener() {
 				
@@ -43,6 +48,40 @@ public class GiveHelpStart extends ActionBarActivity {
 		    		GiveHelpStart.this.startActivity(myIntent);
 		    	} 
 		    });
+		    
+		    getLocation.setOnClickListener(new View.OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					
+					// check if GPS enabled
+					
+					
+			        if (gpsTracker.canGetLocation())
+			        {
+			            String stringLatitude = String.valueOf(gpsTracker.latitude);
+			            String stringLongitude = String.valueOf(gpsTracker.longitude);
+			            
+			            showLocation = (TextView)findViewById(R.id.adress);
+
+			            showLocation.setText("Latitude: "+stringLatitude+" Longitude: "+stringLongitude);
+			            
+			            /*
+			            String country = gpsTracker.getCountryName(this);
+			            String city = gpsTracker.getLocality(this);
+			            String postalCode = gpsTracker.getPostalCode(this);
+			            String addressLine = gpsTracker.getAddressLine(this);
+			            */
+			        }
+			        else
+			        {
+			            // can't get location
+			            // GPS or Network is  not enabled
+			            // Ask user to enable GPS/network in settings
+			            gpsTracker.showSettingsAlert();
+			        }
+				} 
+			});
 	}
 
 	@Override
