@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
     <string name="app_name">Emergency</string>
@@ -7,18 +7,16 @@
     <string name="title_activity_start_screen">Home</string>
     <string name="title_activity_ask_help">Ask Help</string>
     <string name="title_activity_give_help">Give Help</string>
-    <string name="title_activity_result">Results</string>
+    <string name="title_activity_result">Ask Help</string>
     <string name="title_activity_help_details">Details</string>
     <string name="title_activity_tab_listener">TabListener</string>
     <string name="title_activity_fragment">Fragment</string>
-    <string name="title_activity_give_help_create">GiveHelpCreate</string>
     <string name="title_activity_give_help_list">GiveHelpList</string>
     <string name="title_activity_afragment">AFragment</string>
     <string name="title_activity_bfragment">BFragment</string>
-    <string name="title_activity_give_help_first">Give Help - Donations</string>
-    <string name="title_activity_give_help_second">Give Help - Contacts</string>
-    <string name="title_activity_give_help_sent">Helps Sent</string>
-    <string name="title_activity_give_help_start">GiveHelpStart</string>
+    <string name="title_activity_give_help_first">Give Help</string>
+    <string name="title_activity_give_help_sent">Give Help</string>
+    <string name="title_activity_give_help_start">Give Help</string>
     <string name="multilines">Select and give\ndonations</string>
     <string name="multilines2">See your\n given helps</string>
 

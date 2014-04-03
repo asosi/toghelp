@@ -93,7 +93,6 @@
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/next"
         android:layout_alignLeft="@+id/medicines"
         android:layout_alignRight="@+id/linearLayout1"
         android:layout_below="@+id/medicines"
@@ -101,8 +100,8 @@
         android:ems="10"
         android:hint="Notes or details"
         android:inputType="textMultiLine"
-        android:paddingLeft="5dp"
-        android:layout_marginBottom="10dp" >
+        android:padding="5dp" >
+
     </EditText>
 
     <Button
@@ -110,10 +109,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
-        android:layout_toRightOf="@+id/water"
-        android:padding="5dp"
+        android:layout_marginBottom="50dp"
         android:layout_centerHorizontal="true"
+        android:padding="5dp"
         android:text="Send!" />
 
 </RelativeLayout>

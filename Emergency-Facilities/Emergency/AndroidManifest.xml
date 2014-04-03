@@ -26,7 +26,8 @@
         <activity
             android:name="com.example.emergency.AskHelp"
             android:label="@string/title_activity_ask_help"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat.Light"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
@@ -43,14 +44,16 @@
         <activity
             android:name="com.example.emergency.Result"
             android:label="@string/title_activity_result"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat.Light"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.AskHelp" />
         </activity>
         <activity
             android:name="com.example.emergency.HelpDetails"
-            android:label="@string/title_activity_help_details" >
+            android:label="@string/title_activity_help_details"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.Result" />
@@ -66,32 +69,31 @@
         </fragment>
 
         <activity
-            android:name="com.example.emergency.GiveHelpFirst"
+            android:name="com.example.emergency.GiveHelpSelect"
             android:label="@string/title_activity_give_help_first"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat.Light"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.emergency.StartScreen" />
-        </activity>
-        <activity
-            android:name="com.example.emergency.GiveHelpSecond"
-            android:label="@string/title_activity_give_help_second"
-            android:theme="@style/Theme.AppCompat.Light" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.emergency.StartScreen" />
+                android:value="com.example.emergency.GiveHelpStart" />
         </activity>
         <activity
             android:name="com.example.emergency.GiveHelpSent"
             android:label="@string/title_activity_give_help_sent"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat.Light"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.emergency.StartScreen" />
+                android:value="com.example.emergency.GiveHelpStart" />
         </activity>
         <activity
             android:name="com.example.emergency.GiveHelpStart"
-            android:label="@string/title_activity_give_help_start" >
+            android:label="@string/title_activity_give_help_start"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.emergency.GiveHelpStart" />
         </activity>
     </application>
 

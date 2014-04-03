@@ -9,29 +9,32 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class GiveHelpFirst extends ActionBarActivity {
+public class GiveHelpSelect extends ActionBarActivity {
 
-	Button send;
+	Button send, see, select;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_give_help_first);
+		setContentView(R.layout.activity_give_help_select);
 		
 		ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
 	    send = (Button) findViewById(R.id.send);
+	   
 	    
 	    send.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 			
-				Intent myIntent = new Intent(GiveHelpFirst.this, GiveHelpSent.class);
-			    GiveHelpFirst.this.startActivity(myIntent);
+				Intent myIntent = new Intent(GiveHelpSelect.this, GiveHelpSent.class);
+			    GiveHelpSelect.this.startActivity(myIntent);
 			} 
 		});
+	    
+	   
 	}
 
 	@Override

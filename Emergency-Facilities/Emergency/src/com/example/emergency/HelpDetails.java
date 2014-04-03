@@ -4,11 +4,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
-public class HelpDetails extends Activity {
+public class HelpDetails extends ActionBarActivity {
 
 	String name, phone, adress, matched;
 	TextView tname, tphone, tadress, tmatched;	//tmatched is for the offerte that match the requirements of the needer
@@ -18,6 +20,9 @@ public class HelpDetails extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_help_details);
 		
+		ActionBar actionBar = getSupportActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
+	    
 		tphone = (TextView) findViewById(R.id.telephone);
 			
 //		Call the helper by directly clicking his phone number
