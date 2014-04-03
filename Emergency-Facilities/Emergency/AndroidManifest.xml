@@ -53,6 +53,7 @@
         <activity
             android:name="com.example.emergency.HelpDetails"
             android:label="@string/title_activity_help_details"
+            android:theme="@style/Theme.AppCompat.Light"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
