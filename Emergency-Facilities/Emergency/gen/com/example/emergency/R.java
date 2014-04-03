@@ -1170,10 +1170,11 @@ containing a value of this type.
         public static final int activity_give_help_start=0x7f03001a;
         public static final int activity_help_details=0x7f03001b;
         public static final int activity_result=0x7f03001c;
-        public static final int activity_start_screen=0x7f03001d;
-        public static final int row=0x7f03001e;
-        public static final int rowhelpsent=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int activity_situation_map=0x7f03001d;
+        public static final int activity_start_screen=0x7f03001e;
+        public static final int row=0x7f03001f;
+        public static final int rowhelpsent=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
     }
     public static final class menu {
         public static final int a=0x7f0c0000;
@@ -1189,8 +1190,9 @@ containing a value of this type.
         public static final int help_details=0x7f0c000a;
         public static final int result=0x7f0c000b;
         public static final int situation=0x7f0c000c;
-        public static final int start_screen=0x7f0c000d;
-        public static final int tab_listener=0x7f0c000e;
+        public static final int situation_map=0x7f0c000d;
+        public static final int start_screen=0x7f0c000e;
+        public static final int tab_listener=0x7f0c000f;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1249,6 +1251,7 @@ containing a value of this type.
         public static final int title_activity_give_help_start=0x7f0a001c;
         public static final int title_activity_help_details=0x7f0a0014;
         public static final int title_activity_result=0x7f0a0013;
+        public static final int title_activity_situation_map=0x7f0a001f;
         public static final int title_activity_start_screen=0x7f0a0010;
         public static final int title_activity_tab_listener=0x7f0a0015;
     }

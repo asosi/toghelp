@@ -7,9 +7,9 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="18" />
-    
-    <uses-permission android:name = "android.permission.INTERNET"/>
-    <uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -30,8 +30,8 @@
         <activity
             android:name="com.example.emergency.AskHelp"
             android:label="@string/title_activity_ask_help"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.StartScreen" />
@@ -48,8 +48,8 @@
         <activity
             android:name="com.example.emergency.Result"
             android:label="@string/title_activity_result"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.AskHelp" />
@@ -57,8 +57,8 @@
         <activity
             android:name="com.example.emergency.HelpDetails"
             android:label="@string/title_activity_help_details"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.Result" />
@@ -76,8 +76,8 @@
         <activity
             android:name="com.example.emergency.GiveHelpSelect"
             android:label="@string/title_activity_give_help_first"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.GiveHelpStart" />
@@ -85,8 +85,8 @@
         <activity
             android:name="com.example.emergency.GiveHelpSent"
             android:label="@string/title_activity_give_help_sent"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.GiveHelpStart" />
@@ -94,11 +94,15 @@
         <activity
             android:name="com.example.emergency.GiveHelpStart"
             android:label="@string/title_activity_give_help_start"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.emergency.GiveHelpStart" />
+        </activity>
+        <activity
+            android:name="com.example.emergency.SituationMap"
+            android:label="@string/title_activity_situation_map" >
         </activity>
     </application>
 

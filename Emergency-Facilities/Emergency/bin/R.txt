@@ -382,10 +382,11 @@ int layout activity_give_help_sent 0x7f030019
 int layout activity_give_help_start 0x7f03001a
 int layout activity_help_details 0x7f03001b
 int layout activity_result 0x7f03001c
-int layout activity_start_screen 0x7f03001d
-int layout row 0x7f03001e
-int layout rowhelpsent 0x7f03001f
-int layout support_simple_spinner_dropdown_item 0x7f030020
+int layout activity_situation_map 0x7f03001d
+int layout activity_start_screen 0x7f03001e
+int layout row 0x7f03001f
+int layout rowhelpsent 0x7f030020
+int layout support_simple_spinner_dropdown_item 0x7f030021
 int menu a 0x7f0c0000
 int menu ask_help 0x7f0c0001
 int menu b 0x7f0c0002
@@ -399,8 +400,9 @@ int menu give_help_start 0x7f0c0009
 int menu help_details 0x7f0c000a
 int menu result 0x7f0c000b
 int menu situation 0x7f0c000c
-int menu start_screen 0x7f0c000d
-int menu tab_listener 0x7f0c000e
+int menu situation_map 0x7f0c000d
+int menu start_screen 0x7f0c000e
+int menu tab_listener 0x7f0c000f
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
 int string abc_action_menu_overflow_description 0x7f0a0003
@@ -430,6 +432,7 @@ int string title_activity_give_help_sent 0x7f0a001b
 int string title_activity_give_help_start 0x7f0a001c
 int string title_activity_help_details 0x7f0a0014
 int string title_activity_result 0x7f0a0013
+int string title_activity_situation_map 0x7f0a001f
 int string title_activity_start_screen 0x7f0a0010
 int string title_activity_tab_listener 0x7f0a0015
 int style AppBaseTheme 0x7f0b0083

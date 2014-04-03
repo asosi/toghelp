@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Emergency</string>
@@ -19,5 +19,6 @@
     <string name="title_activity_give_help_start">Give Help</string>
     <string name="multilines">Select and give\ndonations</string>
     <string name="multilines2">See your\n given helps</string>
+    <string name="title_activity_situation_map">SituationMap</string>
 
 </resources>

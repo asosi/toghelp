@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -74,7 +77,8 @@
             android:text="Choose what you want to do"
             android:textColor="@color/bianco"
             android:textSize="20sp" />
-    </LinearLayout>
+   
+        </LinearLayout>
 
     <Button
         android:id="@+id/select"
@@ -173,7 +177,7 @@
         android:layout_alignRight="@+id/linearLayout2"
         android:ems="10"
         android:hint="Km"
-        android:inputType="numberDecimal" >
-    </EditText>
+        android:inputType="numberDecimal" />
     
 </RelativeLayout>
+</ScrollView>
