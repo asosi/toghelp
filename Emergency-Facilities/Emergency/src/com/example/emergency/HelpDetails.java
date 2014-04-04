@@ -1,6 +1,15 @@
 package com.example.emergency;
 
 
+import com.example.db.HelpGive;
+import com.example.db.SQLDatabase;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -11,7 +20,7 @@ import android.widget.TextView;
 public class HelpDetails extends ActionBarActivity {
 
 	String name, phone, adress, matched;
-	TextView tname, tphone, tadress, tmatched;	//tmatched is for the offerte that match the requirements of the needer
+	TextView tname, tphone, tadress, tcity, tcountry, tmatched;	//tmatched is for the offerte that match the requirements of the needer
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,18 +32,36 @@ public class HelpDetails extends ActionBarActivity {
 	    actionBar.setDisplayHomeAsUpEnabled(true);
 	    
 		tphone = (TextView) findViewById(R.id.telephone);
+		tname = (TextView) findViewById(R.id.namehelper);
+		tadress = (TextView) findViewById(R.id.adress);
 			
-//		Call the helper by directly clicking his phone number
-//		tphone.setOnClickListener(new View.OnClickListener() {
-//			
-//	    	@Override
-//	    	public void onClick(View arg0) {
-//	      		Intent callIntent = new Intent(Intent.ACTION_CALL);
-//	    		callIntent.setData(Uri.parse("tel:+"+tphone.getText().toString().trim()));
-//	    		startActivity(callIntent);
-//		
-//	      	} 
-//	    });
+		Intent i = getIntent();
+		
+		SQLDatabase db = new SQLDatabase(this);
+		Cursor cursor = db.help();
+		
+		try
+		{
+			
+			while (cursor.moveToNext()){
+				
+		
+
+				if(Integer.toString(cursor.getInt(cursor.getColumnIndex(HelpGive.ID))).equals(i.getStringExtra(getPackageName()+"id"))){
+					
+					
+					tphone.setText(cursor.getString(cursor.getColumnIndex(HelpGive.PHONE)));
+					tname.setText(cursor.getString(cursor.getColumnIndex(HelpGive.NAME)));
+					tadress.setText(cursor.getString(cursor.getColumnIndex(HelpGive.ADDRESS))+"\n"+
+							cursor.getString(cursor.getColumnIndex(HelpGive.CITY))+"\n"+
+							cursor.getString(cursor.getColumnIndex(HelpGive.COUNTRY)));
+				}
+			}
+		}
+		finally
+		{
+			cursor.close();
+		}
 	}
 
 	@Override
