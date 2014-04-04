@@ -90,8 +90,8 @@ public class SQLDatabase extends SQLiteOpenHelper{
 				"Boh", "Varese", "123", "ITALY", 15.0, values);
         insert(db, "ANDREA", "67890", "Poche cose", 45.12, 120.12,
 				"Mah", "Mori", "456435", "ITALY", 30.0, values);
-        insert(db, "DAVIDE", "000000", "Medie cose", 100.12, 100.12,
-				"Chissa", "Dolce", "355678", "ITALY", 5.0, values);
+        insert(db, "DAVIDE", "34807", "Medie cose", 22.12, 13.12,
+				"Chissa", "Dolce", "355678", "ITALY", 10.0, values);
 	}
 	
 	public Cursor help(){
