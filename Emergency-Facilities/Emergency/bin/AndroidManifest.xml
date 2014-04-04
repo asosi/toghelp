@@ -79,7 +79,7 @@
             android:theme="@style/Theme.AppCompat.Light" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.emergency.Result" />
+                android:value="com.example.emergency.AskHelp" />
         </activity>
 
         <fragment

@@ -86,12 +86,26 @@ public class SQLDatabase extends SQLiteOpenHelper{
 	
 	private void populated(SQLiteDatabase db){
 		boolean[] values = {true,true,true,true,true,true};
-		insert(db, "FRANCESCO", "12345", "Tante cose", 12.12, 12.12,
-				"Boh", "Varese", "123", "ITALY", 15.0, values);
-        insert(db, "ANDREA", "67890", "Poche cose", 45.12, 120.12,
-				"Mah", "Mori", "456435", "ITALY", 30.0, values);
-        insert(db, "DAVIDE", "34807", "Medie cose", 22.12, 13.12,
-				"Chissa", "Dolce", "355678", "ITALY", 10.0, values);
+		insert(db, "FRANCESCO BOSCHINI", "12345", "Bread, pasta", 45.82, 8.8,
+				"Via Garibaldi 9", "Varese", "123", "ITALY", 15.0, values);
+        insert(db, "ANDREA SOSI", "67890", "Tante cose", 45.12, 10.98,
+				"Via Castelletto 3", "Mori", "456435", "ITALY", 150.0, values);
+        insert(db, "DAVIDE CAMPIGOTTO", "045123", "I've got also the car", 45.62, 10.44,
+				"Via Luigi XVI 18", "Dolce", "355678", "ITALY", 10.0, values);
+        insert(db, "DAVIDE BRUGHERA", "34807", "Few things", 45.63, 10.42,
+				"Via Giovanni Verga 45", "Dolce", "674678", "ITALY", 10.0, values);
+        insert(db, "JACOPO SARTORELLI", "56707", "I can move faster with car", 45.47, 9.15,
+				"Corso Como 22", "Milano", "355678", "ITALY", 500.0, values);
+        insert(db, "SILVIA NELBO", "34807", "Few things to eat, food", 45.44, 9.20,
+				"Via MonteNapoleone 8", "Milano", "890678", "ITALY", 80.0, values);
+        insert(db, "ALESSANDRO MOIA", "34807", "Rice, pasta, bread,...", 45.44, 9.17,
+				"Via Rosmini 19", "Trento", "32278", "ITALY", 5.0, values);
+        insert(db, "STEFANO BOLLI", "34807", "4 beds for 4 people", 46.06, 11.15,
+				"Via Salé 31", "Povo", "00678", "ITALY", 50.0, values);
+        insert(db, "GIULIA CASTIONI", "34807", "Lot of food!", 45.45, 12.23,
+				"Via Giustiniano II 6", "Venezia", "354678", "ITALY", 250.0, values);
+        insert(db, "FEDERICA PASTORE", "34807", "I can gove also money", 41.86, 12.86,
+				"Piazza Milius", "Roma", "311678", "ITALY", 100.0, values);
 	}
 	
 	public Cursor help(){
