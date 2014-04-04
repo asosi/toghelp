@@ -2,6 +2,6 @@
     xmlns:Emergency="http://schemas.android.com/apk/res-auto" >
 
     <item android:id="@+id/saveinfo"
-          android:icon="@android:drawable/ic_menu_save"
+          android:icon="@drawable/save"
           Emergency:showAsAction="always" />
 </menu>

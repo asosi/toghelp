@@ -1202,10 +1202,11 @@ containing a value of this type.
         public static final int ic_plusone_small_off_client=0x7f020074;
         public static final int ic_plusone_standard_off_client=0x7f020075;
         public static final int ic_plusone_tall_off_client=0x7f020076;
-        public static final int selettorebutton=0x7f020077;
-        public static final int shapebutton=0x7f020078;
-        public static final int shapebuttonfocus=0x7f020079;
-        public static final int shapelistitem=0x7f02007a;
+        public static final int save=0x7f020077;
+        public static final int selettorebutton=0x7f020078;
+        public static final int shapebutton=0x7f020079;
+        public static final int shapebuttonfocus=0x7f02007a;
+        public static final int shapelistitem=0x7f02007b;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f060061;
