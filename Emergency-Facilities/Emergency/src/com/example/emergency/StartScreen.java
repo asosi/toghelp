@@ -18,12 +18,7 @@ public class StartScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.activity_start_screen);
-			
-		Typeface typeFace = Typeface.createFromAsset(getAssets(), "fonts/Varietykiller.otf");
-		TextView titolo = (TextView) findViewById(R.id.titoloapp);
-		titolo.setTypeface(typeFace);
-		
-		
+	
 		askhelp = (Button) findViewById (R.id.askhelp);
 		givehelp = (Button) findViewById (R.id.givehelp);
 		situation = (Button) findViewById (R.id.situation);
