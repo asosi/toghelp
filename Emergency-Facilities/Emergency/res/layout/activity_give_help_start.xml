@@ -55,7 +55,9 @@
         android:ems="10"
         android:hint="Phone"
         android:inputType="phone"
-        android:paddingLeft="5dp" />
+        android:paddingLeft="5dp" >
+
+    </EditText>
     
     <LinearLayout
         android:id="@+id/linearLayout2"

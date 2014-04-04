@@ -17,6 +17,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class GiveHelpSent extends ActionBarActivity {
+	
 	String date, offered;
 	
 	@Override
@@ -53,7 +54,7 @@ public class GiveHelpSent extends ActionBarActivity {
 					String value = "";
 					value += filter(cursor);
 					list1.add(new SingleSent(cursor.getString(cursor.getColumnIndex(HelpGive.DATE)), 
-							"Food, medicines"));
+							value));
 			
 				}
 			}
@@ -87,7 +88,7 @@ public class GiveHelpSent extends ActionBarActivity {
 			ret += "CHILDREN PRODUCTS, ";
 		if(c.getInt(c.getColumnIndex(HelpGive.FIRST_H)) == 1)
 			ret += "FIRST AID, ";
-		if(c.getInt(c.getColumnIndex(HelpGive.WATER)) == 1)
+		if(c.getInt(c.getColumnIndex(HelpGive.MED)) == 1)
 			ret += "MEDICINES, ";
 		return ret;
 	}
