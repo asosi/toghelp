@@ -100,7 +100,15 @@ public class SQLDatabase extends SQLiteOpenHelper{
 				"Via MonteNapoleone 8", "Milano", "890678", "ITALY", 80.0, values);
         insert(db, "ALESSANDRO MOIA", "34807", "Rice, pasta, bread,...", 45.44, 9.17,
 				"Via Rosmini 19", "Trento", "32278", "ITALY", 5.0, values);
-        insert(db, "STEFANO BOLLI", "34807", "4 beds for 4 people", 46.06, 11.15,
+        insert(db, "GIOVANNI OLIVO", "34807", "4 beds for 4 people", 46.09, 11.15,
+				"Via Salé 31", "Povo", "00678", "ITALY", 50.0, values);
+        insert(db, "STEFANO BOLLI", "34807", "3 beds", 46.06, 11.15,
+				"Via Salé 31", "Povo", "00678", "ITALY", 50.0, values);
+        insert(db, "GIORGIO VILLOPINO", "34807", "4 beds for 4 people", 46.09, 11.14,
+				"Via Salé 31", "Povo", "00678", "ITALY", 50.0, values);
+        insert(db, "VELENTINA LO GIACOMO", "34807", "Food, money, 4 bed", 46.07, 11.12,
+				"Via Salé 31", "Povo", "00678", "ITALY", 50.0, values);
+        insert(db, "ALESSANDRO BRESCIANI", "34807", "4 beds for 4 people", 46.08, 11.13,
 				"Via Salé 31", "Povo", "00678", "ITALY", 50.0, values);
         insert(db, "GIULIA CASTIONI", "34807", "Lot of food!", 45.45, 12.23,
 				"Via Giustiniano II 6", "Venezia", "354678", "ITALY", 250.0, values);
