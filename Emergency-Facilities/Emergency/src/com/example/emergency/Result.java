@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.TextView;
 
 public class Result extends ActionBarActivity {
 
@@ -74,8 +75,8 @@ public class Result extends ActionBarActivity {
 					double distance = distFrom(i.getDoubleExtra("lat", 0), i.getDoubleExtra("long", 0),
 							cursor.getDouble(cursor.getColumnIndex(HelpGive.LAT)), cursor.getDouble(cursor.getColumnIndex(HelpGive.LONG)));
 					
-					if(distance <= cursor.getInt(cursor.getColumnIndex(HelpGive.AREA))){
-						list.add(new SingleResult(cursor.getString(cursor.getColumnIndex(HelpGive.NAME)), String.format("%.2f", distance)+ " Km" , value));
+					if(distance <= cursor.getInt(cursor.getColumnIndex(HelpGive.AREA)) && distance <= 100){
+						list.add(new SingleResult(cursor.getString(cursor.getColumnIndex(HelpGive.ID))+"-"+cursor.getString(cursor.getColumnIndex(HelpGive.NAME)), String.format("%.2f", distance)+ " Km" , value));
 					}
 				}
 			}
@@ -125,8 +126,8 @@ public class Result extends ActionBarActivity {
 					double distance = distFrom(i.getDoubleExtra("lat", 0), i.getDoubleExtra("long", 0),
 							cursor.getDouble(cursor.getColumnIndex(HelpGive.LAT)), cursor.getDouble(cursor.getColumnIndex(HelpGive.LONG)));
 					
-					if(distance > cursor.getInt(cursor.getColumnIndex(HelpGive.AREA))){
-						list.add(new SingleResult(cursor.getString(cursor.getColumnIndex(HelpGive.NAME)), String.format("%.2f", distance)+ " Km" , value));
+					if(distance > cursor.getInt(cursor.getColumnIndex(HelpGive.AREA)) && distance <= 100){
+						list.add(new SingleResult(cursor.getString(cursor.getColumnIndex(HelpGive.ID))+"-"+cursor.getString(cursor.getColumnIndex(HelpGive.NAME)), String.format("%.2f", distance)+ " Km" , value));
 					}
 				}
 			}
@@ -144,7 +145,13 @@ public class Result extends ActionBarActivity {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 	            
 	            Intent myIntent = new Intent(Result.this, HelpDetails.class);
+	            
+	            TextView pippo = (TextView)findViewById(R.id.name);
+	            String[] parts1 = pippo.getText().toString().split("-");
+	            String newid = parts1[0];
+	            myIntent.putExtra(getPackageName()+"id", newid);
 	            startActivity(myIntent);
+	            
 			}      
 		}); 
 	}

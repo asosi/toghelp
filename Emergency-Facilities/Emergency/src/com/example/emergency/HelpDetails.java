@@ -20,7 +20,7 @@ import android.widget.TextView;
 public class HelpDetails extends ActionBarActivity {
 
 	String name, phone, adress, matched;
-	TextView tname, tphone, tadress, tcity, tcountry, tmatched;	//tmatched is for the offerte that match the requirements of the needer
+	TextView tname, tphone, tadress, tcity, tcountry, toffer;	//tmatched is for the offerte that match the requirements of the needer
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,7 @@ public class HelpDetails extends ActionBarActivity {
 		tphone = (TextView) findViewById(R.id.telephone);
 		tname = (TextView) findViewById(R.id.namehelper);
 		tadress = (TextView) findViewById(R.id.adress);
+		toffer = (TextView) findViewById(R.id.offerte);
 			
 		Intent i = getIntent();
 		
@@ -48,13 +49,15 @@ public class HelpDetails extends ActionBarActivity {
 		
 
 				if(Integer.toString(cursor.getInt(cursor.getColumnIndex(HelpGive.ID))).equals(i.getStringExtra(getPackageName()+"id"))){
-					
-					
+						
 					tphone.setText(cursor.getString(cursor.getColumnIndex(HelpGive.PHONE)));
 					tname.setText(cursor.getString(cursor.getColumnIndex(HelpGive.NAME)));
 					tadress.setText(cursor.getString(cursor.getColumnIndex(HelpGive.ADDRESS))+"\n"+
 							cursor.getString(cursor.getColumnIndex(HelpGive.CITY))+"\n"+
 							cursor.getString(cursor.getColumnIndex(HelpGive.COUNTRY)));
+					String value = "";
+					value += filter(cursor);
+					toffer.setText(value+"\n\n"+cursor.getString(cursor.getColumnIndex(HelpGive.DESCRIPTION)));
 				}
 			}
 		}
@@ -62,6 +65,23 @@ public class HelpDetails extends ActionBarActivity {
 		{
 			cursor.close();
 		}
+	}
+	
+	private String filter(Cursor c){
+		String ret= "";
+		if(c.getInt(c.getColumnIndex(HelpGive.FOOD)) == 1)
+			ret += "FOOD, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.WATER)) == 1)
+			ret += "WATER, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.BED)) == 1)
+			ret += "BED, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.PR_CH)) == 1)
+			ret += "CHILDREN PRODUCTS, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.FIRST_H)) == 1)
+			ret += "FIRST AID, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.MED)) == 1)
+			ret += "MEDICINES, ";
+		return ret;
 	}
 
 	@Override
