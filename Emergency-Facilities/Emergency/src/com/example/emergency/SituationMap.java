@@ -45,7 +45,7 @@ public class SituationMap extends ActionBarActivity implements OnInfoWindowClick
 	  .position(MYPOSITION)
 	  .title("I'm HERE")
 	  .snippet("Your position")
-	  .icon(BitmapDescriptorFactory.fromResource(R.drawable.halfperson)));
+	  .icon(BitmapDescriptorFactory.fromResource(R.drawable.myposition)));
 	  
 	  
 	  SQLDatabase db = new SQLDatabase(this);
