@@ -19,27 +19,34 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class SituationMap extends ActionBarActivity implements OnInfoWindowClickListener{
 	
 
-	static final LatLng MORI = new LatLng(45.852278, 10.979002);
+	// static final LatLng MORI = new LatLng(45.852278, 10.979002);
 	
  GoogleMap map;
  @SuppressLint("NewApi")
  @Override
  protected void onCreate(Bundle savedInstanceState) {
-  super.onCreate(savedInstanceState);
-  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-  setContentView(R.layout.activity_situation_map);
-
-  map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-  map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-  
-  Marker kiel = map.addMarker(new MarkerOptions()
-  .position(MORI)
-  .title("Mori")
-  .snippet("Mori is cool")
-  .icon(BitmapDescriptorFactory.fromResource(R.drawable.halfperson)));
-  
-  map.moveCamera(CameraUpdateFactory.newLatLngZoom(MORI, 12));
-  map.setOnInfoWindowClickListener(this);
+	  super.onCreate(savedInstanceState);
+	  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+	  setContentView(R.layout.activity_situation_map);
+	  
+	  // get personal position
+	  GPSTracker gpsTracker = new GPSTracker(SituationMap.this);
+	  Double lati = gpsTracker.latitude;
+	  Double longi = gpsTracker.longitude;
+	  
+	  LatLng MYPOSITION = new LatLng(lati, longi);
+	
+	  map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+	  map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+	  
+	  Marker personalPosition = map.addMarker(new MarkerOptions()
+	  .position(MYPOSITION)
+	  .title("I'm HERE")
+	  .snippet("Your position")
+	  .icon(BitmapDescriptorFactory.fromResource(R.drawable.halfperson)));
+	  
+	  map.moveCamera(CameraUpdateFactory.newLatLngZoom(MYPOSITION, 13));
+	  map.setOnInfoWindowClickListener(this);
   
  }
  
