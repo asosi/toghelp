@@ -49,7 +49,13 @@ public class GiveHelpSent extends ActionBarActivity {
 		{
 			while (cursor.moveToNext())
 			{
-				list1.add(new SingleSent(cursor.getString(cursor.getColumnIndex(HelpGive.NAME)), "Food, medicines"));
+				if(cursor.getString(cursor.getColumnIndex(HelpGive.PHONE)).equals("045123")){
+					String value = "";
+					value += filter(cursor);
+					list1.add(new SingleSent(cursor.getString(cursor.getColumnIndex(HelpGive.DATE)), 
+							"Food, medicines"));
+			
+				}
 			}
 		}
 		finally
@@ -67,6 +73,23 @@ public class GiveHelpSent extends ActionBarActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.give_help_sent, menu);
 		return true;
+	}
+	
+	private String filter(Cursor c){
+		String ret= "";
+		if(c.getInt(c.getColumnIndex(HelpGive.FOOD)) == 1)
+			ret += "FOOD, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.WATER)) == 1)
+			ret += "WATER, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.BED)) == 1)
+			ret += "BED, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.PR_CH)) == 1)
+			ret += "CHILDREN PRODUCTS, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.FIRST_H)) == 1)
+			ret += "FIRST AID, ";
+		if(c.getInt(c.getColumnIndex(HelpGive.WATER)) == 1)
+			ret += "MEDICINES, ";
+		return ret;
 	}
 
 }
